@@ -7,12 +7,13 @@ import Counter from '@/components/common/Counter'
 import Footer1 from '@/components/footers/Footer1'
 import Breadcrumb from '@/components/common/Breadcrumb'
 import Image from 'next/image'
+import Header1 from '@/components/header/Header1'
 
 const ProductPage = () => {
 
     return (
         <>
-            <InnerPageHeader />
+            <Header1 />
           
             <Breadcrumb title="Product Details" subtitle="Products Power Progress Explore Our Offer." />
             <div className="product-details-top-area pt-120 mb-120" id="scroll-section">

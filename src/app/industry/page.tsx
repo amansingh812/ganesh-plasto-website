@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Header2 from '@/components/header/Header2'
+
 import FooterTopBanner from '@/components/industry-homepage/FooterTopBanner'
 import HomeAboutSection from '@/components/industry-homepage/HomeAboutSection'
 import HomeBannerSection from '@/components/industry-homepage/HomeBannerSection'
@@ -16,26 +16,27 @@ import HomeTestimonialSection from '@/components/industry-homepage/HomeTestimoni
 import HomeVideoBannerSection from '@/components/industry-homepage/HomeVideoBannerSection'
 import HomeWhyChooseUsSection from '@/components/industry-homepage/HomeWhyChooseUsSection'
 import Footer2 from '@/components/footers/Footer2'
+import Header1 from '@/components/header/Header1'
 
 
 const IndestrtyHomePage = () => {
 
     return (
         <>
-            <Header2 />
+            <Header1 />
             <HomeBannerSection />
             <HomeServiceSection />
             <HomeBenefitSection />
             <HomeAboutSection />
-            <HomeProjectSection />
+            {/* <HomeProjectSection /> */}
             <HomeProcessSection />
             <HomeWhyChooseUsSection />
-            <HomeTeamSection />
-            <HomeVideoBannerSection />
+            {/* <HomeTeamSection /> */}
+            {/* <HomeVideoBannerSection /> */}
             <HomeContactSection />
-            <HomeTestimonialSection />
-            <HomeBlogSection />
-            <HomeCertificationSection />
+            {/* <HomeTestimonialSection /> */}
+            {/* <HomeBlogSection /> */}
+            {/* <HomeCertificationSection /> */}
             <FooterTopBanner />
             <Footer2 />
         </>

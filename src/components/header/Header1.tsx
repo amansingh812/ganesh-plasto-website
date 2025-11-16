@@ -296,14 +296,14 @@ const Header1: React.FC = () => {
                         <ul className="menu-list">
                             <li className={`menu-item-has-children position-inherit ${isHomeActive ? "active" : ""}`}>
                                 <Link href="/" className="drop-down">
-                                    Company
-                                    <svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                    Home
+                                    {/* <svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 0.0495054L10 10.0001L8.13725 10.0001L-8.22301e-08 1.8812L1.86275 -3.55691e-07L7.35294 5.5446L7.30392 0.0495053L10 0.0495054Z" />
                                         <path d="M-9.6438e-05 10.0002L6.27441 10.0002L3.62736 7.32687L-9.63211e-05 7.32687L-9.6438e-05 10.0002Z" />
-                                    </svg>
+                                    </svg> */}
                                 </Link>
                                 <i onClick={() => toggleMenu("HOME")} className={`bi bi-${state.activeMenu === "HOME" ? "dash" : "plus"} dropdown-icon`} />
-                                <div className={`mega-menu ${state.activeMenu === "HOME" ? "d-block" : "none"}`}>
+                                {/* <div className={`mega-menu ${state.activeMenu === "HOME" ? "d-block" : "none"}`}>
                                     <div className="mega-menu-wrap">
                                         <div className="container">
                                             <div className="row gy-lg-5">
@@ -374,10 +374,11 @@ const Header1: React.FC = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </li>
+                            <li className={pathname === "/about" ? "active" : ""}><Link href="/about">About</Link></li>
                             <li className={`menu-item-has-children  ${isServiceActive ? "active" : ""}`}>
-                                <Link href="/service" className="drop-down">Solutions
+                                <Link href="/product" className="drop-down">Product
                                     <svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 0.0495054L10 10.0001L8.13725 10.0001L-8.22301e-08 1.8812L1.86275 -3.55691e-07L7.35294 5.5446L7.30392 0.0495053L10 0.0495054Z" />
                                         <path d="M-9.6438e-05 10.0002L6.27441 10.0002L3.62736 7.32687L-9.63211e-05 7.32687L-9.6438e-05 10.0002Z" />
@@ -385,33 +386,16 @@ const Header1: React.FC = () => {
                                 </Link>
                                 <i onClick={() => toggleMenu("solution")} className={`bi bi-${state.activeMenu === "solution" ? "dash" : "plus"} dropdown-icon`} />
                                 <ul className={`sub-menu ${state.activeMenu === "solution" ? "d-block" : "none"}`}>
-                                    <li className={pathname === "/service" ? "active" : ""}><Link href="/service"><span>Services Style 01</span></Link></li>
-                                    <li className={pathname === "/service/style2" ? "active" : ""}><Link href="/service/style2"><span>Services Style 02</span></Link></li>
-                                    <li className={pathname === "/service/style3" ? "active" : ""}><Link href="/service/style3"><span>Services Style 03</span></Link></li>
-                                    <li className={pathname === "/service/style4" ? "active" : ""}><Link href="/service/style4"><span>Services Style 04</span></Link></li>
-                                    <li className={pathname === "/service/details" ? "active" : ""}><Link href="/service/details"><span>Service Details</span></Link></li>
+                                    <li className={pathname === "/product" ? "active" : ""}><Link href="/product"><span>Our Products</span></Link></li>
+                                    <li className={pathname === "/product/details" ? "active" : ""}><Link href="/product/details"><span>Product Details</span></Link></li>
                                 </ul>
                             </li>
-                            <li className={pathname === "/about" ? "active" : ""}><Link href="/about">About</Link></li>
-                            <li className={`menu-item-has-children  ${isSProjectPathActive ? "active" : ""}`}>
-                                <a href="#" className="drop-down">Project
-                                    <svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0.0495054L10 10.0001L8.13725 10.0001L-8.22301e-08 1.8812L1.86275 -3.55691e-07L7.35294 5.5446L7.30392 0.0495053L10 0.0495054Z" />
-                                        <path d="M-9.6438e-05 10.0002L6.27441 10.0002L3.62736 7.32687L-9.63211e-05 7.32687L-9.6438e-05 10.0002Z" />
-                                    </svg>
-                                </a>
-                                <i onClick={() => toggleMenu("project")} className={`bi bi-${state.activeMenu === "project" ? "dash" : "plus"} dropdown-icon`} />
-                                <ul className={`sub-menu ${state.activeMenu === "project" ? "d-block" : "none"}`}>
-                                    <li className={pathname === "/project" ? "active" : ""}><Link href="/project"><span>Project Grid</span></Link></li>
-                                    <li className={pathname === "/project/metro" ? "active" : ""}><Link href="/project/metro"><span>Project Metro</span></Link></li>
-                                    <li className={pathname === "/project/horizontal" ? "active" : ""}><Link href="/project/horizontal"><span>Project Horizontal</span></Link></li>
-                                    <li className={pathname === "/project/infoflow" ? "active" : ""}><Link href="/project/infoflow"><span>Project Infoflow</span></Link></li>
-                                    <li className={pathname === "/project/text-down" ? "active" : ""}><Link href="/project/text-down"><span>Project Text Down</span></Link></li>
-                                    <li className={pathname === "/project/single-slider" ? "active" : ""}><Link href="/project/single-slider"><span>Project Single Slider</span></Link></li>
-                                    <li className={pathname === "/project/details" ? "active" : ""}><Link href="/project/details"><span>Project Details</span></Link></li>
-                                </ul>
-                            </li>
-                            <li className={`menu-item-has-children  ${isInnerPagetPathActive ? "active" : ""}`}>
+
+                             <li className={pathname === "/industry" ? "active" : ""}><Link href="/industry"><span>Manufacturing</span></Link></li>
+
+                             <li className={pathname === "/contact" ? "active" : ""}><Link href="/contact"><span>Contact Us</span></Link></li>
+
+                            {/* <li className={`menu-item-has-children  ${isInnerPagetPathActive ? "active" : ""}`}>
                                 <a href="#" className="drop-down">Pages
                                     <svg width={10} height={10} viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 0.0495054L10 10.0001L8.13725 10.0001L-8.22301e-08 1.8812L1.86275 -3.55691e-07L7.35294 5.5446L7.30392 0.0495053L10 0.0495054Z" />
@@ -495,7 +479,7 @@ const Header1: React.FC = () => {
                                     <li className={pathname === "/contact" ? "active" : ""}><Link href="/contact"><span>Contact Us</span></Link></li>
                                     <li className={pathname === "/error" ? "active" : ""}><Link href="/error"><span>Error</span></Link></li>
                                 </ul>
-                            </li>
+                            </li> */}
                         </ul>
                         <div className="contact-area d-lg-none d-flex">
                             <div className="icon">

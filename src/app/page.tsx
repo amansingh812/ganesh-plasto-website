@@ -13,9 +13,9 @@ import HomePageServiceSection from "@/components/factory-homepage/HomePageServic
 import HomePageTeamSection from "@/components/factory-homepage/HomePageTeamSection";
 import HomePageTestimonialSection from "@/components/factory-homepage/HomePageTestimonialSection";
 import Footer1 from "@/components/footers/Footer1";
-
-
 import Header1 from "@/components/header/Header1";
+
+
 export default function Home() {
   return (
     <>
@@ -24,15 +24,15 @@ export default function Home() {
       <HomePageAboutSection />
       <HomePageServiceSection />
       <HomePageFeatureSection name="Product" />
-      <HomePageProjectSection />
+      {/* <HomePageProjectSection /> */}
       <HomePageTeamSection />
       <HomaPageVideoSection />
       <HomePageCounterSection />
       <HomePageProcessSection />
       <HomePageTestimonialSection />
-      <HomePageFaqSection />
-      <HomePageMapSection />
-      <HomepageBlogSection />
+      {/* <HomePageFaqSection /> */}
+      {/* <HomePageMapSection />
+      <HomepageBlogSection /> */}
       <FooterTop />
       <Footer1 />
     </>

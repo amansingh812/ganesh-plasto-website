@@ -4,11 +4,12 @@ import Link from 'next/link'
 import React from 'react'
 import Footer1 from '@/components/footers/Footer1'
 import Breadcrumb from '@/components/common/Breadcrumb'
+import Header1 from '@/components/header/Header1'
 
 const page = () => {
     return (
         <>
-            <InnerPageHeader />
+            <Header1 />
             <Breadcrumb title="Contact" subtitle="Contact Us Stay Connected How Can We Assist You" />
        
             <div className="inner-contact-section two pt-120 mb-120" id="scroll-section">

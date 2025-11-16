@@ -11,20 +11,21 @@ import HomepageBlogSection from "@/components/factory-homepage/HomepageBlogSecti
 import FooterTop from "@/components/factory-homepage/FooterTop";
 import Footer1 from "@/components/footers/Footer1";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import Header1 from "@/components/header/Header1";
 
 
 const AboutPage: React.FC = () => {
   return (
     <>
-      <InnerPageHeader />
+      <Header1 />
       <Breadcrumb title="About Us" subtitle="Our Story of Manufacturing Excellence Built on." />
       <HomePageAboutSection pt="pt-120" />
       <HomeWhyChooseUsSection />
       <HomePageFeatureSection />
-      <HomaPageVideoSection />
-      <HomePageCounterSection />
-      <HomePageTeamSection />
-      <HomepageBlogSection />
+      {/* <HomaPageVideoSection /> */}
+      {/* <HomePageCounterSection /> */}
+      {/* <HomePageTeamSection /> */}
+      {/* <HomepageBlogSection /> */}
       <FooterTop />
       <Footer1 />
     </>
